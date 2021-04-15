@@ -30,7 +30,7 @@ const options = {
                 );
                 const data = await response.json();
 
-                console.log(data);
+
 
                 token.jwt = data.jwt;
                 token.id = data.user.id;

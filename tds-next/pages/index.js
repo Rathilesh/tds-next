@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from "next/link";
 import React, { useEffect } from "react";
 
-
 const IndexPage = ({
   session,
 }) => {
@@ -35,11 +34,6 @@ const IndexPage = ({
 
     return (
       <div>
-        <Head>
-          <title>TDS title here</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
-
         <Link href="/api/auth/signin">
           <button
             onClick={(e) => {
@@ -64,11 +58,7 @@ const IndexPage = ({
 
 
         <form id='donateForm'> </form>
-
-        <Link href="/about">
-          <a>About Us</a>
-        </Link>
-
+        {/* <Link href="/about" alt="about"></Link> */}
 
         <Link href="/api/auth/signout">
 
@@ -114,7 +104,7 @@ const IndexPage = ({
         {signOutButtonNode()}
         {signInButtonNode()}
       </div>
-      <div className="text text-3xl text-red-900 font-bold">
+      <div className="text">
         Hello world
       </div>
     </div>
